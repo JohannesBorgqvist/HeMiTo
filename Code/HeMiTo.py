@@ -294,8 +294,8 @@ f_Mi, ax_Mi = plt.subplots(1, 2, constrained_layout=True, figsize=(20, 8))
 # Plot the simulated data and the underlying model
 ax_Mi[0].plot(t_data_original,u_data_1,color=(0/256,68/256,27/256),label="$u(\\tau)$",linewidth=3.0)
 ax_Mi[0].plot(t_data_original,v_data_1,color=(35/256,139/256,69/256),label="$v(\\tau)$",linewidth=3.0)
-ax_Mi[0].plot(t_data_original,u_Mi(t_data,*popt_u_1),color=(0/256,68/256,27/256),linestyle = "dashed",label="$u_{\\mathrm{He}}(\\tau)$",linewidth=3.0)
-ax_Mi[0].plot(t_data_original,v_Mi(t_data,*popt_v_1),color=(35/256,139/256,69/256),linestyle = "dashed",label="$v_{\\mathrm{He}}(\\tau)$",linewidth=3.0)
+ax_Mi[0].plot(t_data_original,u_Mi(t_data,*popt_u_1),color=(0/256,68/256,27/256),linestyle = "dashed",label="$u_{\\mathrm{Mi}}(\\tau)$",linewidth=3.0)
+ax_Mi[0].plot(t_data_original,v_Mi(t_data,*popt_v_1),color=(35/256,139/256,69/256),linestyle = "dashed",label="$v_{\\mathrm{Mi}}(\\tau)$",linewidth=3.0)
 # Set a grid and define a legend
 ax_Mi[0].grid()
 ax_Mi[0].legend(loc='best',prop={"size":40})
@@ -311,8 +311,8 @@ ax_Mi[0].yaxis.set_tick_params(labelsize=35)
 # Plot the simulated data and the underlying model
 ax_Mi[1].plot(t_data_original_2,u_data_2,color=(2/256,56/256,88/256),label="$u(\\tau)$",linewidth=3.0)
 ax_Mi[1].plot(t_data_original_2,v_data_2,color=(5/256,112/256,176/256),label="$v(\\tau)$",linewidth=3.0)
-ax_Mi[1].plot(t_data_original_2,u_Mi(t_data_2,*popt_u_2),linestyle = "dashed",label="$u_{\\mathrm{He}}(\\tau)$",linewidth=3.0)
-ax_Mi[1].plot(t_data_original_2,v_Mi(t_data_2,*popt_v_2),color=(5/256,112/256,176/256),linestyle = "dashed",label="$v_{\\mathrm{He}}(\\tau)$",linewidth=3.0)
+ax_Mi[1].plot(t_data_original_2,u_Mi(t_data_2,*popt_u_2),linestyle = "dashed",label="$u_{\\mathrm{Mi}}(\\tau)$",linewidth=3.0)
+ax_Mi[1].plot(t_data_original_2,v_Mi(t_data_2,*popt_v_2),color=(5/256,112/256,176/256),linestyle = "dashed",label="$v_{\\mathrm{Mi}}(\\tau)$",linewidth=3.0)
 # Set a grid and define a legend
 ax_Mi[1].grid()
 ax_Mi[1].legend(loc='best',prop={"size":40})
